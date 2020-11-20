@@ -1,15 +1,12 @@
-import React, {Component} from "react";
+import React from "react";
 import TableBody from "../TableBody.js"
 import TableHead from "../TableHead"
-import employees from "../../employees.json"
 
-class EmployeeTable extends Component {
-  state = {employees};
-  render() {
+function EmployeeTable (props) {
     return (
       <table className="table table-sm table-primary text-center">
         <TableHead/>
-        {this.state.employees.map(employee => (
+        {props.employeeState.map(employee => (
           <TableBody
             id={employee.id}
             name={employee.name}
@@ -19,7 +16,6 @@ class EmployeeTable extends Component {
         ))}
       </table> 
     )
-  }
 }
 
 export default EmployeeTable;
