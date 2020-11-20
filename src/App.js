@@ -9,9 +9,10 @@ import employeesArray from "./employees.json";
 
 function App() {
   const [employees, setEmployees] = useState(employeesArray);
-
+  let employeesNotFiltered
   const filterbyCook = () => {
     setEmployees(employees.filter((employee) => employee.title === "Cook"));
+    employeesNotFiltered = employees.filter(employee => !employee.title === "Cook")
   };
 
   const sortByName = () => {
@@ -28,11 +29,16 @@ function App() {
     );
   };
 
+  const reset = () => {
+  
+  }
+
   return (
     <Wrapper>
       <Title>Employee Directory</Title>
       <SortData clickHandler={sortByName} />
       <FilterData clickHandler={filterbyCook} />
+      <Reset resetHandle={reset} />
       <EmployeeTable employeeState={employees} />
     </Wrapper>
   );
