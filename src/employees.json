@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "SpongeBob",
+    "title": "Cook",
+    "email": "spongbob@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Mr. Krabs",
+    "title": "Security",
+    "email": "mrkrabs@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Squidward",
+    "title": "Model",
+    "email": "squidward@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Alien",
+    "title": "Cook",
+    "email": "alien@gmail.com"
+  }
+]
